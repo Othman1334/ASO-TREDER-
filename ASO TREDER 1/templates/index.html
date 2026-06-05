@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>⚜️ASO TREDER⚜️ — التفعيل</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bgvid">
+  <source src="{{ url_for('static', filename='videos/trading-bg.mp4') }}" type="video/mp4"/>
+</video>
+<div class="overlay"></div>
+<div class="container">
+  <div class="license-box">
+    <div class="logo-mark-big">⚜️</div>
+    <h1>ASO TREDER</h1>
+    <p>⚜️ منصة آسو للتداول ⚜️ — تفعيل الترخيص الاحترافي</p>
+    <div class="input-wrap">
+      <input type="text" id="licenseKey" placeholder="أدخل مفتاح الترخيص" autocomplete="off" spellcheck="false"/>
+    </div>
+    <button onclick="activateLicense()">
+      <span>تفعيل الترخيص</span>
+    </button>
+    <div id="message"></div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
